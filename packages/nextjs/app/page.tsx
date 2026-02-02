@@ -286,7 +286,12 @@ export default function Home() {
               {isSwitching ? <span className="loading loading-spinner loading-sm" /> : "Switch to Base"}
             </button>
           ) : needsApproval ? (
-            <button className="btn btn-secondary w-full" disabled={isApproving} onClick={handleApprove}>
+            <button
+              className="btn w-full text-lg font-black"
+              style={{ backgroundColor: "#f97316", color: "#000", borderColor: "#f97316" }}
+              disabled={isApproving}
+              onClick={handleApprove}
+            >
               {isApproving ? <span className="loading loading-spinner loading-sm" /> : "🔓 Approve CLAWD"}
             </button>
           ) : (
