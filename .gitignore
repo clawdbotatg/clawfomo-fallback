@@ -21,3 +21,7 @@ node_modules
 
 # cli
 dist
+
+# env files
+.env.local
+packages/nextjs/.env.local
